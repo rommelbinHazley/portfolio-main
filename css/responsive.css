@@ -1,0 +1,204 @@
+@media (max-width: 900px) {
+    .hero__photoslot {
+        left: 0;
+        right: 0;
+        width: 100%;
+        -webkit-mask-image: none;
+        mask-image: none;
+    }
+
+    .hero__photo {
+        top: 0;
+        right: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-position: 50% 14%;
+        filter: grayscale(1) contrast(1.04) brightness(0.62);
+        -webkit-mask-image: none;
+        mask-image: none;
+    }
+
+    .hero__scrim {
+        background: radial-gradient(64% 52% at 50% 42%, rgba(10, 11, 14, 0.5), transparent 76%),
+        linear-gradient(to bottom, rgba(10, 11, 14, 0.72) 0%, rgba(10, 11, 14, 0.28) 24%, rgba(10, 11, 14, 0.5) 68%, var(--bg) 100%);
+    }
+
+    .hero__cap {
+        display: none;
+    }
+
+    .hero__content {
+        text-align: center;
+    }
+
+    .hero__text {
+        max-width: 640px;
+        margin: 0 auto;
+    }
+
+    .hero__title {
+        align-items: center;
+    }
+
+    .hero__rule {
+        max-width: 540px;
+        margin: 30px auto 0;
+    }
+
+    .hero__name {
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media (max-width: 880px) {
+    .about__grid {
+        grid-template-columns: 1fr;
+        gap: 36px;
+    }
+
+    .svc__grid, .proj__grid {
+        grid-template-columns: 1fr;
+    }
+
+    .stats {
+        gap: 16px;
+    }
+}
+
+@media (max-width: 680px) {
+    /* Collapsed: links hidden */
+    .nav__links {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        gap: 32px;
+    }
+
+    /* Open: expand the nav itself to full viewport — avoids backdrop-filter containing-block trap */
+    .nav.open {
+        bottom: 0;
+        flex-direction: column;
+        justify-content: center;
+        background: rgba(10, 11, 14, 0.97);
+        backdrop-filter: blur(20px);
+        padding-top: 70px;
+        padding-bottom: 40px;
+    }
+
+    .nav.open .nav__links {
+        display: flex;
+    }
+
+    /* Pin logo + burger to top edge of the overlay */
+    .nav.open .nav__logo {
+        position: absolute;
+        top: 18px;
+        left: 28px;
+    }
+
+    .nav.open .nav__burger {
+        position: absolute;
+        top: 18px;
+        right: 28px;
+    }
+
+    /* Link appearance inside menu */
+    .nav__links a {
+        font-size: 20px;
+        color: var(--text-dim);
+    }
+
+    .nav__links a::after {
+        display: none;
+    }
+
+    .nav__cta {
+        border: none;
+        padding: 0;
+        border-radius: 0;
+        font-size: 20px;
+    }
+
+    .nav__burger {
+        display: flex;
+    }
+
+    .shell {
+        padding: 0 20px;
+    }
+
+    .hero__rule {
+        gap: 12px;
+    }
+
+    .hero__rule .tag {
+        font-size: 10px;
+        letter-spacing: 0.2em;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    *, *::after, *::before {
+        animation: none !important;
+    }
+
+    .reveal {
+        opacity: 1;
+        transform: none;
+    }
+
+    .hero__photo {
+        opacity: 1;
+    }
+
+    .hero__eyebrow, .hero__rule, .hero__name, .scrollcue, .hero__title .word span {
+        opacity: 1;
+        animation: none;
+    }
+}
+
+/* photo left, text right (desktop) */
+@media (min-width: 901px) {
+    .hero__photoslot, .hero__photo {
+        right: auto;
+        left: 0;
+    }
+
+    .hero__photoslot {
+        -webkit-mask-image: linear-gradient(to left, transparent 0%, rgba(0, 0, 0, 0.5) 17%, #000 42%);
+        mask-image: linear-gradient(to left, transparent 0%, rgba(0, 0, 0, 0.5) 17%, #000 42%);
+    }
+
+    .hero__photo {
+        object-position: 42% 14%;
+        -webkit-mask-image: linear-gradient(to left, transparent 0%, rgba(0, 0, 0, 0.5) 17%, #000 42%);
+        mask-image: linear-gradient(to left, transparent 0%, rgba(0, 0, 0, 0.5) 17%, #000 42%);
+    }
+
+    .hero__cap {
+        left: auto;
+        right: clamp(50px, 3vw, 22px);
+    }
+
+    .hero__content {
+        text-align: right;
+    }
+
+    .hero__text {
+        margin-left: auto;
+    }
+
+    .hero__title {
+        align-items: flex-end;
+    }
+
+    .hero__rule {
+        margin-left: auto;
+    }
+
+    .hero__name {
+        margin-left: auto;
+    }
+}

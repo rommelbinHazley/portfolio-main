@@ -1,0 +1,126 @@
+/* ---- about ---- */
+.about {
+    background: var(--bg-2);
+    border-top: 1px solid var(--border);
+    border-bottom: 1px solid var(--border);
+}
+
+.about__grid {
+    display: grid;
+    grid-template-columns: 0.85fr 1.15fr;
+    gap: 60px;
+    align-items: start;
+}
+
+.about__lead {
+    font-size: clamp(22px, 2.6vw, 32px);
+    font-weight: 400;
+    line-height: 1.32;
+    letter-spacing: -0.01em;
+}
+
+.about__lead b {
+    color: var(--accent-2);
+    font-weight: 500;
+}
+
+.about__body {
+    color: var(--text-dim);
+    font-size: 17px;
+}
+
+.about__body p {
+    margin: 0 0 18px;
+}
+
+/* ---- services ---- */
+.svc__grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 22px;
+}
+
+/* ---- projects ---- */
+.proj {
+    background: var(--bg-2);
+    border-top: 1px solid var(--border);
+    border-bottom: 1px solid var(--border);
+}
+
+.proj__grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 22px;
+    margin-top: 50px;
+}
+
+/* ---- contact ---- */
+.contact {
+    text-align: center;
+}
+
+.contact .h2 {
+    max-width: 12ch;
+    margin: 0 auto;
+}
+
+.contact__sub {
+    color: var(--text-dim);
+    font-size: 18px;
+    max-width: 480px;
+    margin: 22px auto 38px;
+}
+
+.contact__actions {
+    display: flex;
+    gap: 14px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.contact__socials {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    margin-top: 56px;
+    flex-wrap: wrap;
+}
+
+.contact__socials a {
+    font-size: 14px;
+    color: var(--text-dim);
+    letter-spacing: 0.02em;
+    transition: color 0.25s;
+    display: inline-flex;
+    gap: 8px;
+    align-items: center;
+}
+
+.contact__socials a span.k {
+    color: var(--text-faint);
+}
+
+.contact__socials a:hover {
+    color: var(--accent-2);
+}
+
+/* ---- footer ---- */
+.footer {
+    position: relative;
+    z-index: 1;
+    border-top: 1px solid var(--border);
+    padding: 30px 28px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 14px;
+    color: var(--text-faint);
+    font-size: 13px;
+    max-width: var(--maxw);
+    margin: 0 auto;
+}
+
+.footer a:hover {
+    color: var(--text-dim);
+}

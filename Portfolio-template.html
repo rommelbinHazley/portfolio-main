@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="ru" data-accent="violet">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Данил Лебедев — Web Developer</title>
+<link rel="icon" href="favicon.ico" sizes="any" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="css/variables.css" />
+<link rel="stylesheet" href="css/base.css" />
+<link rel="stylesheet" href="css/nav.css" />
+<link rel="stylesheet" href="css/hero.css" />
+<link rel="stylesheet" href="css/components.css" />
+<link rel="stylesheet" href="css/sections.css" />
+<link rel="stylesheet" href="css/responsive.css" />
+</head>
+<body>
+
+<!-- ============ NAV ============ -->
+<nav class="nav" id="nav" aria-label="Основная навигация">
+  <a class="nav__logo" href="#top">
+    <span class="mark"><span>ДЛ</span></span>
+    Данил Лебедев
+  </a>
+  <div class="nav__links" id="nav-links">
+    <a href="#about">О себе</a>
+    <a href="#services">Стек</a>
+    <a href="#projects">Проекты</a>
+    <a href="#contact" class="nav__cta">Связаться</a>
+  </div>
+  <button class="nav__burger" aria-label="Меню" aria-expanded="false" aria-controls="nav-links">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<!-- ============ HERO ============ -->
+<header class="hero" id="top" data-screen-label="hero">
+  <div class="hero__photoslot" aria-hidden="true"><span>замените на своё фото · photo.jpg</span></div>
+  <img class="hero__photo" src="hero.jpeg" alt="Данил Лебедев" onerror="this.style.display='none'" />
+  <div class="hero__scrim"></div>
+  <span class="hero__cap">Full-Stack Engineer · 2026</span>
+  <div class="hero__content shell">
+    <div class="hero__text">
+      <div class="hero__eyebrow">Портфолио · 2026</div>
+      <h1 class="hero__title"><span class="word">WEB</span> <span class="word">DEVELOPER</span></h1>
+      <div class="hero__rule">
+        <span class="ln"></span>
+        <span class="tag">Full-Stack · Go · PHP · React</span>
+        <span class="ln r"></span>
+      </div>
+      <p class="hero__name">Меня зовут <b>Данил Лебедев</b> — реализую проекты для вашего бизнеса.</p>
+    </div>
+  </div>
+  <a class="scrollcue" href="#about">
+    <span class="mouse"></span>
+    scroll
+  </a>
+</header>
+
+<!-- ============ ABOUT ============ -->
+<section class="block about" id="about" data-screen-label="about">
+  <div class="shell about__grid">
+    <div class="reveal">
+      <div class="kicker">О себе</div>
+      <p class="about__lead">Web разработчик, который реализует идею <b>до конца</b>.</p>
+    </div>
+    <div class="reveal d1 about__body">
+      <p>Пишу надёжные и быстрые сервисы на <strong style="color:var(--text)">PHP</strong> и <strong style="color:var(--text)">Go</strong>. От начала и до конца. Поддерживаю ваши существующие проекты и улучшаю.</p>
+      <p>Люблю чистые контракты API, предсказуемые релизы и код, который не стыдно открыть через год. Берусь за задачи, где нужно и продумать архитектуру, и реализовать самые мелкие фишки</p>
+      <div class="stats">
+        <div class="stat"><div class="num"><em>4</em>+</div><div class="lab">лет в разработке</div></div>
+        <div class="stat"><div class="num"><em>10</em>+</div><div class="lab">проектов в проде</div></div>
+        <div class="stat"><div class="num"><em>6</em>+</div><div class="lab">технологий в стеке</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ SERVICES / STACK ============ -->
+<section class="block" id="services" data-screen-label="services">
+  <div class="shell">
+    <div class="section__head">
+      <div class="reveal">
+        <div class="kicker">Что я делаю</div>
+        <h2 class="h2">Три зоны<br />ответственности</h2>
+      </div>
+      <p class="reveal d1">От серверной логики до клиентского интерфейса — один человек закрывает весь путь фичи.</p>
+    </div>
+    <div class="svc__grid">
+      <div class="card reveal">
+        <div class="svc__icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="5" rx="8" ry="3"></ellipse><path d="M4 5v6c0 1.66 3.58 3 8 3s8-1.34 8-3V5"></path><path d="M4 11v6c0 1.66 3.58 3 8 3s8-1.34 8-3v-6"></path></svg>
+        </div>
+        <h3>Backend</h3>
+        <p>Сервисы, API и интеграции на Go и PHP. Очереди, кэш, надёжная работа под нагрузкой.</p>
+        <div class="svc__stack"><span class="chip">Go</span><span class="chip">PHP</span><span class="chip">Laravel</span><span class="chip">Symfony</span></div>
+      </div>
+      <div class="card reveal d1">
+        <div class="svc__icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="16" rx="2"></rect><path d="M3 9h18"></path><path d="M7 6.5h.01M9.5 6.5h.01"></path></svg>
+        </div>
+        <h3>Frontend</h3>
+        <p>Интерфейсы на React и Vue: от макета до прод-сборки. Состояние, анимации, отзывчивость.</p>
+        <div class="svc__stack"><span class="chip">React</span><span class="chip">Vue</span><span class="chip">jQuery</span></div>
+      </div>
+      <div class="card reveal d2">
+        <div class="svc__icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2 3 7v10l9 5 9-5V7z"></path><path d="M3 7l9 5 9-5"></path><path d="M12 12v10"></path></svg>
+        </div>
+        <h3>DevOps</h3>
+        <p>Docker-окружения и CI/CD с zero-downtime деплоем. Чтобы релиз был скучным и предсказуемым.</p>
+        <div class="svc__stack"><span class="chip">Docker</span><span class="chip">CI/CD</span></div>
+      </div>
+    </div>
+
+    <div class="marquee reveal">
+      <div class="marquee__track">
+        <span>Go<span class="dot"> · </span></span><span>PHP<span class="dot"> · </span></span><span>Laravel<span class="dot"> · </span></span><span>Symfony<span class="dot"> · </span></span><span>Docker<span class="dot"> · </span></span><span>React<span class="dot"> · </span></span><span>Vue<span class="dot"> · </span></span><span>jQuery<span class="dot"> · </span></span>
+        <span aria-hidden="true">Go<span class="dot"> · </span></span><span aria-hidden="true">PHP<span class="dot"> · </span></span><span aria-hidden="true">Laravel<span class="dot"> · </span></span><span aria-hidden="true">Symfony<span class="dot"> · </span></span><span aria-hidden="true">Docker<span class="dot"> · </span></span><span aria-hidden="true">React<span class="dot"> · </span></span><span aria-hidden="true">Vue<span class="dot"> · </span></span><span aria-hidden="true">jQuery<span class="dot"> · </span></span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ PROJECTS ============ -->
+<section class="block proj" id="projects" data-screen-label="projects">
+  <div class="shell">
+    <div class="section__head">
+      <div class="reveal">
+        <div class="kicker">Избранное</div>
+        <h2 class="h2">Проекты</h2>
+      </div>
+      <p class="reveal d1">Несколько работ, по которым видно, как я думаю об архитектуре и деталях.</p>
+    </div>
+    <div class="proj__grid">
+      <article class="pcard reveal">
+        <div class="pcard__top"><span class="pcard__hash">a3f9c1e</span><span class="pcard__idx">01</span></div>
+        <h3>Payments Gateway</h3>
+        <p>Платёжный шлюз на Go: обработка вебхуков, идемпотентность, 1.2k RPS на пике.</p>
+        <div class="pcard__tags"><span class="chip">Go</span><span class="chip">PostgreSQL</span><span class="chip">gRPC</span></div>
+        <a class="btn" href="#" target="_blank" rel="noopener">Смотреть <span class="arr">→</span></a>
+      </article>
+      <article class="pcard reveal d1">
+        <div class="pcard__top"><span class="pcard__hash">7b21d40</span><span class="pcard__idx">02</span></div>
+        <h3>CRM Symfony</h3>
+        <p>CRM для отдела продаж: роли, воронки, отчёты в реальном времени.</p>
+        <div class="pcard__tags"><span class="chip">PHP</span><span class="chip">Symfony</span><span class="chip">Vue</span></div>
+        <a class="btn" href="#" target="_blank" rel="noopener">Смотреть <span class="arr">→</span></a>
+      </article>
+      <article class="pcard reveal d2">
+        <div class="pcard__top"><span class="pcard__hash">e0c8a55</span><span class="pcard__idx">03</span></div>
+        <h3>Realtime Dashboard</h3>
+        <p>Дашборд метрик на React + WebSocket: живые графики и алерты для команды.</p>
+        <div class="pcard__tags"><span class="chip">React</span><span class="chip">TypeScript</span><span class="chip">WS</span></div>
+        <a class="btn" href="#" target="_blank" rel="noopener">Смотреть <span class="arr">→</span></a>
+      </article>
+      <article class="pcard reveal">
+        <div class="pcard__top"><span class="pcard__hash">c4d7f92</span><span class="pcard__idx">04</span></div>
+        <h3>Shop Laravel</h3>
+        <p>E-commerce платформа: каталог, корзина, интеграция с 1С и оплатой.</p>
+        <div class="pcard__tags"><span class="chip">Laravel</span><span class="chip">Vue</span><span class="chip">Redis</span></div>
+        <a class="btn" href="#" target="_blank" rel="noopener">Смотреть <span class="arr">→</span></a>
+      </article>
+      <article class="pcard reveal d1">
+        <div class="pcard__top"><span class="pcard__hash">1a90b3d</span><span class="pcard__idx">05</span></div>
+        <h3>Deploy Toolkit</h3>
+        <p>Скрипты и CI/CD-пайплайны для zero-downtime деплоя в Docker Swarm.</p>
+        <div class="pcard__tags"><span class="chip">Docker</span><span class="chip">Bash</span><span class="chip">CI/CD</span></div>
+        <a class="btn" href="#" target="_blank" rel="noopener">Смотреть <span class="arr">→</span></a>
+      </article>
+      <article class="pcard reveal d2" style="justify-content:center; align-items:flex-start; background:transparent; border-style:dashed;">
+        <h3 style="color:var(--text-dim)">И ещё в работе…</h3>
+        <p>Готов показать больше кейсов и код вживую — напишите, и я пришлю ссылки.</p>
+        <a class="btn btn--ghost" href="#contact">Запросить <span class="arr">→</span></a>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CONTACT ============ -->
+<section class="block contact" id="contact" data-screen-label="contact">
+  <div class="shell">
+    <div class="reveal"><div class="kicker" style="justify-content:center">Контакты</div></div>
+    <h2 class="h2 reveal d1">Давайте сделаем<br />что-то стоящее</h2>
+    <p class="contact__sub reveal d1">Открыт к интересным задачам и сотрудничеству. Отвечаю быстро.</p>
+    <div class="contact__actions reveal d2">
+      <a class="btn" href="mailto:hazleyishero@gmail.com">Написать на почту <span class="arr">→</span></a>
+      <a class="btn btn--ghost" href="https://t.me/HazleyIsHero" target="_blank" rel="noopener">Telegram <span class="arr">→</span></a>
+    </div>
+    <div class="contact__socials reveal d3">
+      <a href="mailto:hazleyishero@gmail.com"><span class="k">email</span> hazleyishero@gmail.com</a>
+      <a href="https://github.com/" target="_blank" rel="noopener"><span class="k">github</span> /danil</a>
+      <a href="https://linkedin.com/" target="_blank" rel="noopener"><span class="k">linkedin</span> /in/danil</a>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <span>© 2026 Данил Лебедев</span>
+  <span>Сделано на чистом CSS, JS и HTML</span>
+</footer>
+
+<!-- ============ SCRIPTS ============ -->
+<script>
+(function () {
+  const nav = document.getElementById('nav');
+
+  // nav scrolled state
+  function onScroll() { nav.classList.toggle('scrolled', window.scrollY > 24); }
+  onScroll();
+  window.addEventListener('scroll', onScroll, { passive: true });
+
+  // hamburger menu
+  const burger = document.querySelector('.nav__burger');
+  const navLinks = document.getElementById('nav-links');
+  burger.addEventListener('click', function () {
+    const isOpen = nav.classList.toggle('open');
+    burger.setAttribute('aria-expanded', String(isOpen));
+    document.body.style.overflow = isOpen ? 'hidden' : '';
+  });
+  navLinks.querySelectorAll('a').forEach(function (a) {
+    a.addEventListener('click', function () {
+      nav.classList.remove('open');
+      burger.setAttribute('aria-expanded', 'false');
+      document.body.style.overflow = '';
+    });
+  });
+
+  // reveal on scroll
+  if ('IntersectionObserver' in window) {
+    const io = new IntersectionObserver(function (entries) {
+      entries.forEach(function (e) {
+        if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); }
+      });
+    }, { threshold: 0.18, rootMargin: '0px 0px -8% 0px' });
+    document.querySelectorAll('.reveal').forEach(function (el) { io.observe(el); });
+  } else {
+    document.querySelectorAll('.reveal').forEach(function (el) { el.classList.add('in'); });
+  }
+})();
+</script>
+
+</body>
+</html>
